@@ -54,7 +54,7 @@ We provide a **unified deployment script** that allows you to deploy either or b
 **Step 1: Open AWS CloudShell and Clone the Repository**
 
 ```bash
-git clone https://github.com/ASUCICREPO/PDF_Accessibility.git
+git clone https://github.com/satech-uic/PDF_Accessibility.git
 cd PDF_Accessibility
 ```
 
