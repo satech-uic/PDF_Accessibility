@@ -24,6 +24,10 @@ class PDFAccessibility(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
         
+        # Add cost tag to all resources in this stack
+        cdk.Tags.of(self).add("project", "PDFRemediation")
+        cdk.Tags.of(self).add("component", "PDF_backend")
+
         # S3 Bucket
         bucket = s3.Bucket(self, "pdfaccessibilitybucket1", 
                           encryption=s3.BucketEncryption.S3_MANAGED, 
